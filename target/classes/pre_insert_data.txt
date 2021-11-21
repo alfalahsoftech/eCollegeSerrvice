@@ -1,0 +1,11 @@
+INSERT INTO public.eouser(
+	id, enabled,last_login_time, password, retry_count,username)
+	VALUES (1, true ,'2019-11-11', 'abd123',1,'abd');
+	
+INSERT INTO public.login_role(
+	id, description, name)
+	VALUES (1, 'admin role', 'admin');
+	
+INSERT INTO public.user_role(
+	user_id, role_id)
+	VALUES (1, 1);
